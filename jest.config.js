@@ -5,3 +5,5 @@ module.exports = {
   modulePaths: ['.'],
   testEnvironment: 'jest-environment-jsdom-sixteen'
 }
+
+export {}
