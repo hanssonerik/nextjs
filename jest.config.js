@@ -2,6 +2,6 @@ module.exports = {
   globals: {
     'ts-jest': {}
   },
-  modulePaths: ['./'],
+  modulePaths: ['.'],
   testEnvironment: 'jest-environment-jsdom-sixteen'
 }
