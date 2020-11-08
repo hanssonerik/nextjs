@@ -5,7 +5,7 @@ export interface ViewProps {
 }
 export const View = ({ message }: ViewProps): ReactElement => (
   <>
-    <div>nextjs template</div>
+    <div>Next.js template</div>
     <p>{message}</p>
   </>
 )

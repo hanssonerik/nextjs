@@ -2,10 +2,10 @@ import React from 'react'
 import { render, screen } from '@testing-library/react'
 import { Home } from 'components/Home/Home'
 
-describe('initial test', () => {
-  it('renders About', () => {
+describe('<Home />', () => {
+  it('renders template text', () => {
     render(<Home />)
 
-    expect(screen.getByText('About')).toBeDefined()
+    expect(screen.getByText('Next.js template')).toBeDefined()
   })
 })
