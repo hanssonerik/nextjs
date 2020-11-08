@@ -3,5 +3,13 @@ module.exports = {
     'ts-jest': {}
   },
   modulePaths: ['.'],
-  testEnvironment: 'jest-environment-jsdom-sixteen'
+  testEnvironment: 'jest-environment-jsdom-sixteen',
+  coverageThreshold: {
+    global: {
+      statements: 100,
+      branches: 100,
+      functions: 100,
+      lines: 100
+    }
+  }
 }
