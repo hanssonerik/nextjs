@@ -8,4 +8,10 @@ describe('<Home />', () => {
 
     expect(screen.getByText('Next.js template')).toBeDefined()
   })
+
+  it('renders message', () => {
+    render(<Home />)
+
+    expect(screen.getByText(/not really/)).toBeDefined()
+  })
 })

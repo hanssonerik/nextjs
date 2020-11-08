@@ -6,9 +6,9 @@ import { View } from './Home.View'
 export const Home = (): ReactElement => (
   <>
     <Head>
-      <title>About Erik Hansson</title>
+      <title>Awesome Next.js template</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <View />
+    <View message={'...(not really)'} />
   </>
 )
