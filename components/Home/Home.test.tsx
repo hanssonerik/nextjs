@@ -6,7 +6,7 @@ describe('<Home />', () => {
   it('renders template text', () => {
     render(<Home />)
 
-    expect(screen.getByText('Next.js template')).toBeDefined()
+    expect(screen.getByText('Next.js should fail template')).toBeDefined()
   })
 
   it('renders message', () => {
