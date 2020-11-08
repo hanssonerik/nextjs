@@ -1,3 +1,11 @@
 import React, { ReactElement } from 'react'
 
-export const View = (): ReactElement => <div>nextjs template</div>
+export interface ViewProps {
+  message: string
+}
+export const View = ({ message }: ViewProps): ReactElement => (
+  <>
+    <div>nextjs template</div>
+    <p>{message}</p>
+  </>
+)
