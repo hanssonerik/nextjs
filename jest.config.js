@@ -3,7 +3,7 @@ module.exports = {
     'ts-jest': {}
   },
   modulePaths: ['.'],
-  testEnvironment: 'jest-environment-jsdom-sixteen',
+  testEnvironment: 'jsdom',
   coverageThreshold: {
     global: {
       statements: 100,
