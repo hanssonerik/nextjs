@@ -1,9 +1,13 @@
-module.exports = {
-  globals: {
-    'ts-jest': {}
-  },
-  modulePaths: ['.'],
-  testEnvironment: 'jsdom',
+const nextJest = require('next/jest')
+
+const createJestConfig = nextJest({
+  dir: './'
+})
+
+const customJestConfig = {
+  setupFilesAfterEnv: ['<rootDir>/test/setup.ts'],
+  moduleDirectories: ['node_modules', '<rootDir>/'],
+  testEnvironment: 'jest-environment-jsdom',
   coverageThreshold: {
     global: {
       statements: 100,
@@ -13,3 +17,5 @@ module.exports = {
     }
   }
 }
+
+module.exports = createJestConfig(customJestConfig)

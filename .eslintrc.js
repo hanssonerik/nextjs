@@ -21,8 +21,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:react/recommended',
     'plugin:jest-dom/recommended',
-    'plugin:testing-library/recommended',
-    'plugin:testing-library/react'
+    'plugin:testing-library/react',
+    'plugin:@next/next/recommended'
   ],
   rules: {
     '@typescript-eslint/no-non-null-assertion': 'off',

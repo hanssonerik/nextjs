@@ -6,12 +6,12 @@ describe('<Home />', () => {
   it('renders template text', () => {
     render(<Home />)
 
-    expect(screen.getByText('Next.js template')).toBeDefined()
+    expect(screen.getByText('Next.js template')).toBeInTheDocument()
   })
 
   it('renders message', () => {
     render(<Home />)
 
-    expect(screen.getByText(/not really/)).toBeDefined()
+    expect(screen.getByText(/not really/)).toBeInTheDocument()
   })
 })
