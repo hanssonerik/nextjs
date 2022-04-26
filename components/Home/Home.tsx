@@ -7,6 +7,8 @@ export const Home = (): ReactElement => (
   <>
     <Head>
       <title>Awesome Next.js template</title>
+      <meta name="description" content="Meta description content goes here." />
+      <meta name="description" content="Meta description content goes here." />
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <View message={'...(not really)'} />
